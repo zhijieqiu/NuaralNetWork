@@ -22,7 +22,8 @@ private:
 	}
 	inline double sigmoid_des(double x)
 	{
-		return x*(1 - x);
+		double y = sigmoid(x);
+		return y*(1 - y);
 	}
 	int getInOut(char* line);
 public:
